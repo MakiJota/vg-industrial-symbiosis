@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Västra Götaland Industrial Symbiosis</title>
+  <meta name="description" content="Interactive report: waste, materials and industrial symbiosis potential in the 49 kommuner of Västra Götaland County (2022).">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  <script>window.echarts || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.1/echarts.min.js"><\/script>');</script>
+  <script src="config.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="app">
+    <aside class="nav" id="nav" aria-label="Sections">
+      <div class="brand">
+        <img class="brand-mark brand-logo" src="assets/vgregion-logo.png" alt="Västra Götalandsregionen">
+        <div class="brand-sub" data-i18n="brand.sub">Industrial symbiosis</div>
+      </div>
+      <nav class="site-links" aria-label="Project pages">
+        <a class="site-link" href="reports/">Results report</a>
+        <a class="site-link" href="method.html">Method</a>
+        <a class="site-link" href="about.html">About</a>
+        <a class="site-link case-link" href="https://makijota.github.io/skaraborg-symbiosis/skaraborg/">Skaraborg case ↗</a>
+      </nav>
+      <nav id="nav-list"></nav>
+      <div class="nav-foot">
+        <div class="seg" role="group" aria-label="Language">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="sv">SV</button>
+        </div>
+        <button type="button" class="ghost" id="theme-btn" aria-label="Toggle dark mode">◐</button>
+      </div>
+    </aside>
+
+    <div class="main-wrap">
+      <header class="topbar">
+        <button type="button" class="ghost menu-btn" id="menu-btn" aria-label="Menu">☰</button>
+        <div class="filters" id="filters"></div>
+      </header>
+      <div class="chips" id="chips" aria-live="polite"></div>
+      <main id="main" tabindex="-1"></main>
+      <footer class="foot" id="foot"></footer>
+    </div>
+  </div>
+  <div class="tooltip-layer" id="loading"><span data-i18n="ui.loading">Loading…</span></div>
+
+  <script src="assets/i18n.js"></script>
+  <script src="assets/i18n_vg.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/views.js"></script>
+  <script src="assets/explorer.js"></script>
+  <script src="assets/chat.js"></script>
+  <script>RIS.start();</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Method — Industrial Symbiosis in Västra Götaland</title>
+  <meta name="description" content="A plain-language description of the data and allocation process used in the Västra Götaland study.">
+  <style>
+    :root { color-scheme: light dark; --bg: #fbfaf7; --text: #1f2328; --muted: #5b6168; --line: #e3e0d8; --accent: #1d6fb8; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #16181b; --text: #e6e4df; --muted: #a2a6ab; --line: #2e3237; --accent: #6cb2f0; } }
+    html { background: var(--bg); color: var(--text); }
+    body { max-width: 48rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    nav { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
+    a { color: var(--accent); } h1 { font-size: 2rem; line-height: 1.2; } h2 { margin-top: 2rem; font-size: 1.2rem; }
+    li { margin-bottom: .65rem; } .note { color: var(--muted); border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 2.5rem; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Site">
+    <a href="./">Interactive report</a>
+    <a href="reports/">Results report</a>
+    <a href="method.html" aria-current="page">Method</a>
+    <a href="about.html">About</a>
+    <a href="https://makijota.github.io/skaraborg-symbiosis/skaraborg/">Skaraborg case ↗</a>
+  </nav>
+  <h1>How the estimates are made</h1>
+  <p>The same core pipeline is applied to Västra Götaland and Skaraborg so that their results can be compared. The county run covers 49 kommuner and four sub-regions. All quantities refer to 2022 unless otherwise noted.</p>
+  <ol>
+    <li><strong>Describe the regional economy.</strong> SCB workplace employment is grouped by kommun and industry. Trade data are used to estimate production inputs imported by businesses in sectors A–F, allocated to local workplaces using employment.</li>
+    <li><strong>Estimate waste.</strong> Employment is multiplied by sector-specific waste intensities estimated from Eurostat waste and employment statistics. Estimated waste is distributed across European List of Waste codes using industry profiles.</li>
+    <li><strong>Identify possible substitutes.</strong> Waste codes are matched to four-digit imported products using documented exchanges in MAESTRI and the reviewed W2RKG knowledge graph. Implausible matches are excluded in applicable scenarios.</li>
+    <li><strong>Allocate compatible waste to demand.</strong> The model compares the amount and type of available waste with compatible input demand. It reports a regional optimum, kommun-level allocation (local matches first, then between kommuner), sub-region results, and anonymised firm-level estimates.</li>
+    <li><strong>Estimate value and compare scenarios.</strong> Allocated tonnes are valued at estimated regional import unit prices. Scenarios vary the matching sources and assumptions; the “without mineral fuels” scenario excludes CN 27, primarily crude oil, from demand.</li>
+  </ol>
+  <h2>Interpret with care</h2>
+  <ul>
+    <li>Import records omit goods bought from suppliers elsewhere in Sweden, so import demand is not total demand.</li>
+    <li>The mass-based substitution assumes one tonne of waste replaces one tonne of product; processing losses and technical constraints may make that unrealistic.</li>
+    <li>Waste intensities, especially quarry waste, and the matching database are uncertain. Different plausible assumptions produce materially different totals.</li>
+    <li>The allocation rules rank compatible exchanges; they do not model prices, contracts, logistics, quality approvals, or whether firms would actually trade.</li>
+  </ul>
+  <p class="note">Read the <a href="reports/">results report</a>, open the interactive report's <a href="index.html#/method">Method and data section</a>, or compare with the <a href="https://makijota.github.io/skaraborg-symbiosis/skaraborg/">Skaraborg case</a>.</p>
+</body>
+</html>

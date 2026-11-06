@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Results report — Industrial Symbiosis in Västra Götaland</title>
+  <meta name="description" content="Summary of modelled industrial symbiosis potential in Västra Götaland County, with links to the interactive report and method.">
+  <style>
+    :root { color-scheme: light dark; --bg: #fbfaf7; --text: #1f2328; --muted: #5b6168; --line: #e3e0d8; --accent: #1d6fb8; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #16181b; --text: #e6e4df; --muted: #a2a6ab; --line: #2e3237; --accent: #6cb2f0; } }
+    html { background: var(--bg); color: var(--text); }
+    body { max-width: 52rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    nav { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem; }
+    a { color: var(--accent); } h1 { font-size: 2rem; line-height: 1.2; } h2 { margin-top: 2.2rem; font-size: 1.25rem; }
+    .lead, .note { color: var(--muted); } table { width: 100%; border-collapse: collapse; display: block; overflow-x: auto; margin: 1rem 0 1.5rem; }
+    th, td { text-align: left; padding: .5rem .7rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    th { font-weight: 650; } .note { border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 2.5rem; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Site">
+    <a href="../">Interactive report</a>
+    <a href="./" aria-current="page">Results report</a>
+    <a href="../method.html">Method</a>
+    <a href="../about.html">About</a>
+    <a href="https://makijota.github.io/skaraborg-symbiosis/skaraborg/">Skaraborg case ↗</a>
+  </nav>
+  <h1>Regional industrial symbiosis in Västra Götaland</h1>
+  <p class="lead">Summary of 2022 model estimates across 49 kommuner. Use the <a href="../">interactive report</a> to explore industries, waste types, products, locations and scenarios.</p>
+  <h2>At a glance</h2>
+  <ul>
+    <li>The study estimates 10.7 Mt of waste from sectors A–F and 12.3 Mt of imported production inputs. Mineral fuels, mainly crude oil, account for 10.5 Mt of those inputs.</li>
+    <li>In the baseline kommun-level allocation, 589 kt of waste is matched to compatible demand. Excluding mineral fuels from demand gives 453 kt.</li>
+    <li>Across scenarios, allocated mass varies substantially with the matching database and assumptions. The “all sources, reviewed” scenario gives 750 kt; quarry-waste and matching assumptions remain important uncertainties.</li>
+    <li>Västra Götaland is also reported as four sub-regions: Göteborgsregionen, Fyrbodal, Sjuhärad and Skaraborg.</li>
+  </ul>
+  <h2>Kommun-level scenario comparison</h2>
+  <p>Two-stage allocation in the mass regime. Values are modelled tonnes, not observed exchanges.</p>
+  <table>
+    <thead><tr><th>Scenario</th><th>Allocated</th><th>Share of waste</th><th>Share of demand</th></tr></thead>
+    <tbody>
+      <tr><td>MAESTRI only</td><td>224 kt</td><td>2.1%</td><td>1.8%</td></tr>
+      <tr><td>W2RKG reviewed</td><td>405 kt</td><td>3.8%</td><td>3.3%</td></tr>
+      <tr><td>MAESTRI + W2RKG</td><td>441 kt</td><td>4.1%</td><td>3.6%</td></tr>
+      <tr><td>Baseline</td><td>589 kt</td><td>5.5%</td><td>4.8%</td></tr>
+      <tr><td>Baseline without mineral fuels</td><td>453 kt</td><td>4.2%</td><td>24.7%*</td></tr>
+      <tr><td>All sources, reviewed</td><td>750 kt</td><td>7.0%</td><td>6.1%</td></tr>
+    </tbody>
+  </table>
+  <p class="note">*For the fuel-free scenario, the demand denominator excludes CN 27. Results are model estimates for 2022, not measured flows or forecasts. See the <a href="../method.html">method and limitations</a>, <a href="../">interactive report</a>, and <a href="https://makijota.github.io/skaraborg-symbiosis/skaraborg/">companion Skaraborg case</a>.</p>
+</body>
+</html>
