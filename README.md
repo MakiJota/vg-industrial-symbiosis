@@ -7,7 +7,8 @@ inputs. The reference year is 2022.
 | | |
 |---|---|
 | Interactive report | <https://makijota.github.io/vg-industrial-symbiosis/> |
-| Results report | [`docs/reports/`](docs/reports/) |
+| Full results report | [`docs/reports/full-report.html`](docs/reports/full-report.html) |
+| Results summary | [`docs/reports/`](docs/reports/) |
 | Method | [`docs/method.html`](docs/method.html) |
 | About | [`docs/about.html`](docs/about.html) |
 | Companion Skaraborg case | <https://makijota.github.io/skaraborg-symbiosis/skaraborg/> |

@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light dark;
+  --page: #fbfaf7;
+  --text: #1f2328;
+  --muted: #5b6168;
+  --line: #e3e0d8;
+  --accent: #1d6fb8;
+  --head: #f1efe9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #16181b;
+    --text: #e6e4df;
+    --muted: #a2a6ab;
+    --line: #2e3237;
+    --accent: #6cb2f0;
+    --head: #1f2226;
+  }
+}
+html { background: var(--page); color: var(--text); }
+body { max-width: 52rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+h1 { font-size: 2rem; line-height: 1.2; margin-bottom: .5rem; }
+h2 { margin-top: 2.5rem; padding-top: .5rem; border-top: 1px solid var(--line); }
+h3 { margin-top: 1.75rem; }
+a { color: var(--accent); }
+em { color: var(--muted); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+nav.site { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; font-size: .92rem;
+  padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+nav.site a[aria-current] { color: var(--text); font-weight: 600; text-decoration: none; }
+nav#TOC { background: var(--head); border: 1px solid var(--line); border-radius: 8px;
+  padding: .5rem 1.25rem; margin: 1.5rem 0; font-size: .92rem; }
+nav#TOC ul { padding-left: 1.1rem; }
+table { border-collapse: collapse; display: block; overflow-x: auto; max-width: 100%;
+  margin: 1rem 0; font-size: .9rem; font-variant-numeric: tabular-nums; }
+th, td { border-bottom: 1px solid var(--line); padding: .35rem .7rem;
+  text-align: left; vertical-align: top; }
+th { background: var(--head); font-weight: 600; }
+code { font-size: .88em; background: var(--head); padding: .05em .3em; border-radius: 4px; }
+@media (min-width: 1100px) {
+  body { max-width: 52rem; margin-left: max(19rem, calc(50vw - 26rem + 9rem)); }
+  nav#TOC { position: fixed; top: 0; bottom: 0; left: 0; width: 16.5rem; margin: 0;
+    border: 0; border-right: 1px solid var(--line); border-radius: 0;
+    padding: 1.5rem 1rem 2rem 1.25rem; overflow-y: auto; font-size: .88rem; line-height: 1.45; }
+  nav#TOC::before { content: "Contents"; display: block; font-weight: 700; margin-bottom: .5rem; }
+  nav#TOC ul { padding-left: 0; list-style: none; }
+  nav#TOC li { margin: .3rem 0; }
+  nav#TOC a { color: var(--muted); text-decoration: none; }
+  nav#TOC a:hover { color: var(--accent); }
+}

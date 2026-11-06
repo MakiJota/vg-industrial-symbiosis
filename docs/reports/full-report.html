@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.11" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Regional industrial symbiosis in Västra Götaland County —
+results (2022)</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="report.css" />
+</head>
+<body>
+<nav class="site" aria-label="Site">
+  <a href="../">Interactive report</a>
+  <a href="index.html">Results summary</a>
+  <a href="full-report.html" aria-current="page">Full report</a>
+  <a href="../method.html">Method</a>
+  <a href="../about.html">About</a>
+  <a href="https://makijota.github.io/skaraborg-symbiosis/skaraborg/">Skaraborg case ↗</a>
+</nav>
+
+<h1
+id="regional-industrial-symbiosis-in-västra-götaland-county--results-2022">Regional
+industrial symbiosis in Västra Götaland County — results (2022)</h1>
+<p>This report applies the same core method as the companion Skaraborg
+study to all 49 kommuner in Västra Götaland County. Unless stated
+otherwise, figures refer to the <strong>baseline</strong> scenario
+(MAESTRI plus reviewed W2RKG matching, plausibility exclusions and
+corrected manufacturing scaling) in the <strong>mass</strong> regime.
+Explore the <a href="../">interactive county report</a> for kommun,
+sub-region, industry, product and scenario detail. See also the
+<a href="../method.html">method and limitations</a> and the
+<a href="https://makijota.github.io/skaraborg-symbiosis/skaraborg/">Skaraborg
+case</a>.</p>
+<h2 id="1-the-county-in-numbers">1. The county in numbers</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Skaraborg</th>
+<th style="text-align: right;">Västra Götaland</th>
+<th style="text-align: right;">VG / Skaraborg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kommuner</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>Workers (SCB, all sectors)</td>
+<td style="text-align: right;">133,700</td>
+<td style="text-align: right;">954,823</td>
+<td style="text-align: right;">7.1×</td>
+</tr>
+<tr>
+<td>Share of Swedish jobs</td>
+<td style="text-align: right;">2.4 %</td>
+<td style="text-align: right;">16.9 %</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>Share of Swedish manufacturing jobs</td>
+<td style="text-align: right;">4.7 %</td>
+<td style="text-align: right;">20.3 %</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td>Registry firms (sectors A–E)</td>
+<td style="text-align: right;">706</td>
+<td style="text-align: right;">2,811</td>
+<td style="text-align: right;">4.0×</td>
+</tr>
+<tr>
+<td>Waste generated, sectors A–F (W)</td>
+<td style="text-align: right;">2.0 Mt</td>
+<td style="text-align: right;">10.7 Mt</td>
+<td style="text-align: right;">5.3×</td>
+</tr>
+<tr>
+<td>Imported production inputs (D)</td>
+<td style="text-align: right;">0.46 Mt, 2.5 bn SEK</td>
+<td style="text-align: right;">12.3 Mt, 99 bn SEK</td>
+<td style="text-align: right;">27×</td>
+</tr>
+<tr>
+<td>D without mineral fuels (CN 27)</td>
+<td style="text-align: right;">0.40 Mt</td>
+<td style="text-align: right;">1.83 Mt</td>
+<td style="text-align: right;">4.6×</td>
+</tr>
+<tr>
+<td>Apparent regional material use (stage 13)</td>
+<td style="text-align: right;">8.6 Mt</td>
+<td style="text-align: right;">41.5 Mt</td>
+<td style="text-align: right;">4.8×</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Waste (10.7 Mt).</strong> Mining and quarrying (B) gives 5.6
+Mt, construction (F) 2.4 Mt, waste management (E) 1.2 Mt and
+manufacturing (C) 1.1 Mt. Göteborg (3.1 Mt), Mölndal (1.1 Mt), Lidköping
+(0.75 Mt) and Stenungsund (0.72 Mt) generate the most. In all four, the
+largest item is quarry waste (NACE 0812), which the model estimates at
+4.3 Mt for the county. As in Skaraborg, this is probably overestimated
+(§6).</li>
+<li><strong>Demand (12.3 Mt) is 85 % crude oil.</strong> Preemraff
+Lysekil (6.8 Mt CN 2709) and the Göteborg refineries (3.2 Mt) dominate
+the imported inputs. Mineral fuels make up 10.5 Mt of D and 85 bn SEK of
+its value. The scenario <strong>no_energy_inputs</strong> removes CN 27
+from demand. It is the better reference for what waste can replace,
+because crude oil cannot be replaced by any industrial waste in the
+matching databases.</li>
+</ul>
+<h2 id="2-symbiosis-potential-by-scale">2. Symbiosis potential by
+scale</h2>
+<p>Mass regime. Value is the SEK of the replaced inputs at the county's
+unit values.</p>
+<table>
+<thead>
+<tr>
+<th>Scale</th>
+<th style="text-align: right;">Baseline: allocated</th>
+<th style="text-align: right;">% of W</th>
+<th style="text-align: right;">% of D (mass)</th>
+<th style="text-align: right;">MSEK</th>
+<th style="text-align: right;">No CN 27: allocated</th>
+<th style="text-align: right;">% of D (mass)</th>
+<th style="text-align: right;">MSEK</th>
+<th style="text-align: right;">% of D (value)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1b Region, LP optimum</td>
+<td style="text-align: right;">592 kt</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: right;">2,998</td>
+<td style="text-align: right;">456 kt</td>
+<td style="text-align: right;">24.9</td>
+<td style="text-align: right;">1,220</td>
+<td style="text-align: right;">8.4</td>
+</tr>
+<tr>
+<td>2a Kommun, intra only</td>
+<td style="text-align: right;">324 kt</td>
+<td style="text-align: right;">3.0</td>
+<td style="text-align: right;">2.6</td>
+<td style="text-align: right;">1,814</td>
+<td style="text-align: right;">257 kt</td>
+<td style="text-align: right;">14.0</td>
+<td style="text-align: right;">842</td>
+<td style="text-align: right;">5.8</td>
+</tr>
+<tr>
+<td><strong>2c Sub-regions on their own</strong></td>
+<td style="text-align: right;">468 kt</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: right;">3.8</td>
+<td style="text-align: right;">2,356</td>
+<td style="text-align: right;">379 kt</td>
+<td style="text-align: right;">20.7</td>
+<td style="text-align: right;">1,143</td>
+<td style="text-align: right;">7.9</td>
+</tr>
+<tr>
+<td>2b Kommun, intra + inter</td>
+<td style="text-align: right;">589 kt</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: right;">3,012</td>
+<td style="text-align: right;">453 kt</td>
+<td style="text-align: right;">24.7</td>
+<td style="text-align: right;">1,233</td>
+<td style="text-align: right;">8.5</td>
+</tr>
+<tr>
+<td>3b Firms, top-down</td>
+<td style="text-align: right;">475 kt</td>
+<td style="text-align: right;">6.6</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: right;">2,439</td>
+<td style="text-align: right;">354 kt</td>
+<td style="text-align: right;">4.9*</td>
+<td style="text-align: right;">926</td>
+<td style="text-align: right;">6.6</td>
+</tr>
+</tbody>
+</table>
+<p>* For firm scales the first ratio is the share of firm-level W (7.2
+Mt).</p>
+<ul>
+<li><strong>Greedy reaches the LP optimum</strong> at the regional scale
+(592 = 592 kt), as in Skaraborg. The kommun two-stage allocation (2b)
+recovers 99.5 % of it.</li>
+<li><strong>Exchange between kommuner nearly doubles local use.</strong>
+Intra-kommun exchange gives 324 kt. Exchange within each sub-region adds
+144 kt (2c), and exchange across the whole county adds a further 121 kt
+(2b). Of the 2b flows, 55 % stay within a kommun.</li>
+<li><strong>Firm-to-firm links are long.</strong> The mean exchange
+distance is 76 km (top-down basis; 64 km bottom-up), against 34–36 km in
+Skaraborg. The nearest compatible buyer of many streams is in another
+sub-region.</li>
+<li><strong>Waste replacing fuels.</strong> About 135 kt of waste
+replaces fuels in the baseline, and those pairs carry most of the value
+(§6). Without CN 27, the substituted value falls from 3.0 to 1.2 bn SEK,
+but its share of the (fuel-free) input bill rises to 8.5 %, close to
+Skaraborg's 8.7 %.</li>
+</ul>
+<p>What is substituted (baseline, 2b): crushed stone from quarry
+overburden (117 kt), fuel wood from bark, wood waste and pallets (100
+kt), petroleum oils and gas from oily wastes (132 kt, see §6), soil →
+salt (49 kt, see §6), concrete articles from construction mixtures (46
+kt), limestone from concrete (29 kt), and recovered paper (17 kt).
+Recovered paper, aluminium scrap and recovered-fibre pulp are small in
+tonnes but among the most valuable per tonne.</p>
+<h2 id="3-sub-regions-alone-and-together">3. Sub-regions: alone and
+together</h2>
+<p>Kommun two-stage allocation, mass regime, baseline.</p>
+<table>
+<thead>
+<tr>
+<th>Sub-region</th>
+<th style="text-align: right;">W (kt)</th>
+<th style="text-align: right;">D (kt)</th>
+<th style="text-align: right;">Own waste used, alone</th>
+<th style="text-align: right;">Own waste used, in county</th>
+<th style="text-align: right;">D met, alone</th>
+<th style="text-align: right;">D met, in county</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Göteborgsregionen (12)</td>
+<td style="text-align: right;">5,931</td>
+<td style="text-align: right;">4,074</td>
+<td style="text-align: right;">3.2 %</td>
+<td style="text-align: right;">5.8 %</td>
+<td style="text-align: right;">4.6 %</td>
+<td style="text-align: right;">4.9 %</td>
+</tr>
+<tr>
+<td>Skaraborg (15)</td>
+<td style="text-align: right;">2,007</td>
+<td style="text-align: right;">461</td>
+<td style="text-align: right;">8.2 %</td>
+<td style="text-align: right;">6.2 %</td>
+<td style="text-align: right;">35.8 %</td>
+<td style="text-align: right;">39.5 %</td>
+</tr>
+<tr>
+<td>Fyrbodal (14)</td>
+<td style="text-align: right;">1,577</td>
+<td style="text-align: right;">7,623</td>
+<td style="text-align: right;">4.8 %</td>
+<td style="text-align: right;">5.4 %</td>
+<td style="text-align: right;">1.0 %</td>
+<td style="text-align: right;">1.4 %</td>
+</tr>
+<tr>
+<td>Sjuhärad (8)</td>
+<td style="text-align: right;">1,212</td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">3.3 %</td>
+<td style="text-align: right;">3.1 %</td>
+<td style="text-align: right;">25.9 %</td>
+<td style="text-align: right;">65.8 %</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Göteborgsregionen is the county's supplier.</strong> It
+sends 160 kt to the other sub-regions and receives 19 kt. Its main
+exports are 63 kt to Fyrbodal (oily wastes to the Lysekil refinery), 61
+kt to Skaraborg (minerals, wood) and 37 kt to Sjuhärad.</li>
+<li><strong>Sjuhärad gains the most from the county.</strong> Its demand
+met by waste rises from 26 % on its own to 66 % in the county, mostly
+from Göteborgsregionen and Fyrbodal.</li>
+<li><strong>Skaraborg is the most self-contained sub-region.</strong> On
+its own it uses 8.2 % of its waste (165 kt), which reproduces the
+Skaraborg study exactly (consistency check). Inside the county it uses
+only 6.2 % (124 kt), because larger waste streams from Göteborgsregionen
+(61 kt) take part of its own demand first. Its demand met by waste still
+rises to 39.5 %. The greedy rule serves the largest waste first, so it
+is a ranking, not a market. Whether Göteborg's surplus should displace
+Skaraborg's own is a policy question, not a model result.</li>
+<li><strong>Flows between sub-regions are 37 % of the county's exchanged
+tonnes</strong> (219 of 589 kt) and 33 % of the value. Without CN 27,
+Göteborgsregionen's oily wastes no longer go to the Lysekil refinery
+(Göteborgsregionen → Fyrbodal drops from 63 to 12 kt). Flows between
+sub-regions are then 34 % of the tonnes but only 21 % of the value: what
+crosses sub-region borders is mostly bulky, low-value minerals and
+wood.</li>
+</ul>
+<p>Explore the interactive report's <strong>Sub-regions</strong> section
+for charts comparing sub-regions on their own and within the county.</p>
+<h2 id="4-scenarios">4. Scenarios</h2>
+<p>Kommun two-stage (2b), mass regime.</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th style="text-align: right;">Allocated (kt)</th>
+<th style="text-align: right;">% of W</th>
+<th style="text-align: right;">% of D</th>
+<th style="text-align: right;">MSEK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MAESTRI only</td>
+<td style="text-align: right;">224</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: right;">491</td>
+</tr>
+<tr>
+<td>W2RKG reviewed</td>
+<td style="text-align: right;">405</td>
+<td style="text-align: right;">3.8</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: right;">1,131</td>
+</tr>
+<tr>
+<td>MAESTRI + W2RKG</td>
+<td style="text-align: right;">441</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">1,446</td>
+</tr>
+<tr>
+<td><strong>Baseline</strong></td>
+<td style="text-align: right;"><strong>589</strong></td>
+<td style="text-align: right;"><strong>5.5</strong></td>
+<td style="text-align: right;"><strong>4.8</strong></td>
+<td style="text-align: right;"><strong>3,012</strong></td>
+</tr>
+<tr>
+<td>Baseline, no CN 27 in D</td>
+<td style="text-align: right;">453</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">24.7</td>
+<td style="text-align: right;">1,233</td>
+</tr>
+<tr>
+<td>All sources (reviewed)</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">6.1</td>
+<td style="text-align: right;">3,891</td>
+</tr>
+<tr>
+<td>All sources, no quarry waste</td>
+<td style="text-align: right;">687</td>
+<td style="text-align: right;">13.5</td>
+<td style="text-align: right;">5.6</td>
+<td style="text-align: right;">3,229</td>
+</tr>
+<tr>
+<td>Quarry beta 100 t/worker</td>
+<td style="text-align: right;">511</td>
+<td style="text-align: right;">8.2</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: right;">3,063</td>
+</tr>
+<tr>
+<td>W2RKG raw (unreviewed)</td>
+<td style="text-align: right;">859</td>
+<td style="text-align: right;">8.0</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">4,895</td>
+</tr>
+</tbody>
+</table>
+<p>The ranking of uncertainties is the same as in Skaraborg. The
+matching database moves the result most (224–859 kt, 0.5–4.9 bn SEK),
+ahead of quarry waste. One difference: in the county, quarry waste
+matters less for the substituted tonnes. Without it, all sources still
+allocate 687 kt, because demand for crushed stone (the main outlet of
+overburden) is small relative to the other streams.</p>
+<h2 id="5-against-total-regional-material-use-stage-13">5. Against total
+regional material use (stage 13)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Skaraborg</th>
+<th style="text-align: right;">Västra Götaland</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Domestic extraction</td>
+<td style="text-align: right;">7.2 Mt</td>
+<td style="text-align: right;">23.6 Mt (stone/gravel 17.1, biomass
+6.3)</td>
+</tr>
+<tr>
+<td>Imports from abroad</td>
+<td style="text-align: right;">1.5 Mt</td>
+<td style="text-align: right;">20.7 Mt (crude oil and gas 11.4)</td>
+</tr>
+<tr>
+<td>Lorry inflow / outflow</td>
+<td style="text-align: right;">3.7 / 3.8 Mt</td>
+<td style="text-align: right;">7.6 / 10.5 Mt</td>
+</tr>
+<tr>
+<td>Apparent use</td>
+<td style="text-align: right;">8.6 Mt</td>
+<td style="text-align: right;">41.5 Mt</td>
+</tr>
+<tr>
+<td>Waste replacing use, baseline</td>
+<td style="text-align: right;">1,131 kt (14.2 %)</td>
+<td style="text-align: right;">4,632 kt (12.7 %)</td>
+</tr>
+<tr>
+<td>Conservative (all sources, no quarry waste)</td>
+<td style="text-align: right;">330 kt (4.1 %)</td>
+<td style="text-align: right;">2,187 kt (6.0 %)</td>
+</tr>
+<tr>
+<td>Baseline, no CN 27 in use</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">4,549 kt (18.3 % of 24.8 Mt)</td>
+</tr>
+</tbody>
+</table>
+<p>Against what the county actually uses, not just what it imports,
+demand stops being the limit. Waste could replace 6–18 % of material
+use, depending on whether quarry waste and fuels are counted. Only lorry
+freight is in the survey. Göteborg's port, rail and pipeline flows are
+not, so inflows and outflows of the county are understated, more so than
+for Skaraborg.</p>
+<h2 id="6-caveats-specific-to-the-county">6. Caveats specific to the
+county</h2>
+<ol type="1">
+<li><p><strong>Three LLM-extension pairs are implausible at county
+scale</strong> and should be added to
+<code>00_data/match_exclusions.csv</code>, or reviewed. They moved
+almost nothing in Skaraborg because the demand was not there:</p>
+<ul>
+<li><code>130507</code> oily water from separators → <code>2710</code>
+petroleum oils: 75 kt, 704 MSEK. The stream is mostly water.</li>
+<li><code>160708</code> wastes containing oil → <code>2711</code>
+petroleum gas: 47 kt, 871 MSEK.</li>
+<li><code>170504</code> soil and stones → <code>2501</code> salt: 49
+kt.</li>
+</ul>
+<p>Together they are 171 kt (29 %) of the baseline tonnes and 1.6 bn SEK
+(54 %) of its value. Excluding them changes Skaraborg's baseline by 2.3
+kt. The <code>no_energy_inputs</code> scenario already removes the first
+two.</p></li>
+<li><p><strong>Petroleum support services get the mining beta.</strong>
+NACE 0910 has 63 workers in VG (Stenungsund 33, Göteborg 26), mostly
+service firms around the chemical cluster and refineries. With beta_B =
+11,504 t/worker they generate 0.72 Mt of "mining waste". This is the
+same flaw as the quarry beta (one B intensity for all of 05–09). The
+<code>quarry_beta*</code> scenarios rescale NACE 08 but not 09.</p></li>
+<li><p><strong>Quarry waste</strong>: 4.8 Mt modelled, against an
+SGU-implied quarry output of 15.9 Mt for the county's 421 quarry workers
+(30 %). The overestimate is about 3–10×, as in Skaraborg.</p></li>
+<li><p><strong>The firm registry covers sectors A–E only.</strong> It
+includes 92 % of manufacturing workers and none in construction (F, 2.4
+Mt of waste). F waste therefore reaches the firm scale only through the
+"not covered" totals.</p></li>
+<li><p><strong>Ten firm locations were imputed</strong> because
+coordinates were missing or more than 15 km outside their registered
+kommun. Firm identifiers and underlying location records are not
+included in this published report.</p></li>
+</ol>
+<h2 id="7-priorities-for-further-work">7. Priorities for further
+work</h2>
+<ul>
+<li>Review the three candidate waste-product matches described in
+§6.1.</li>
+<li>Use <code>no_energy_inputs</code> (or exclude CN 27 everywhere) as
+the county's reference for imported demand, and report CN 27
+separately.</li>
+<li>Give NACE 09 its own intensity, or fold it into C/services, as was
+done for quarries.</li>
+</ul>
+</body>
+</html>
